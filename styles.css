@@ -3,29 +3,6 @@ html {
   font-family: "Spartan", sans-serif;
 }
 
-html[data-mytheme="light"] {
-  --global-theme-main-bg: hsl(222, 26%, 31%);
-  --global-theme-screen-bg: hsl(224, 36%, 15%);
-  --global-theme-keypad-bg: hsl(223, 31%, 20%);
-  --global-theme-key-bg: hsl(30, 25%, 89%);
-  --global-theme-key-shadow: hsl(28, 16%, 65%);
-  --global-theme-key-col: hsl(221, 14%, 31%);
-  --global-theme-key-accent-bg: hsl(225, 21%, 49%);
-  --global-theme-key-accent-shadow: hsl(224, 28%, 35%);
-  --global-theme-key-accent-col: white;
-  --global-theme-key-eq-bg: hsl(6, 63%, 50%);
-  --global-theme-key-eq-shadow: hsl(6, 70%, 34%);
-  --global-theme-key-eq-col: white;
-  --global-theme-head-col: white;
-
-  --global-theme-key-bg-active: rgb(206, 206, 206);
-  --global-theme-key-shadow-active: hsl(28, 16%, 65%);
-  --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
-  --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
-  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
-  --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
-}
-
 html[data-mytheme="dark"] {
   --global-theme-main-bg: hsl(222, 26%, 31%);
   --global-theme-screen-bg: hsl(224, 36%, 15%);
@@ -49,27 +26,50 @@ html[data-mytheme="dark"] {
   --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
 }
 
-html[data-mytheme="purple"] {
-  --global-theme-main-bg: hsl(222, 26%, 31%);
-  --global-theme-screen-bg: hsl(224, 36%, 15%);
-  --global-theme-keypad-bg: hsl(223, 31%, 20%);
-  --global-theme-key-bg: hsl(30, 25%, 89%);
-  --global-theme-key-shadow: hsl(28, 16%, 65%);
-  --global-theme-key-col: hsl(221, 14%, 31%);
-  --global-theme-key-accent-bg: hsl(225, 21%, 49%);
-  --global-theme-key-accent-shadow: hsl(224, 28%, 35%);
+html[data-mytheme="light"] {
+  --global-theme-main-bg: hsl(0, 0%, 90%);
+  --global-theme-screen-bg: hsl(0, 0%, 93%);
+  --global-theme-keypad-bg: hsl(0, 5%, 81%);
+  --global-theme-key-bg: hsl(45, 7%, 89%);
+  --global-theme-key-shadow: hsl(35, 11%, 61%);
+  --global-theme-key-col: hsl(60, 10%, 19%);
+  --global-theme-key-accent-bg: hsl(185, 42%, 37%);
+  --global-theme-key-accent-shadow: hsl(185, 58%, 25%);
   --global-theme-key-accent-col: white;
-  --global-theme-key-eq-bg: hsl(6, 63%, 50%);
-  --global-theme-key-eq-shadow: hsl(6, 70%, 34%);
+  --global-theme-key-eq-bg: hsl(25, 98%, 40%);
+  --global-theme-key-eq-shadow: hsl(25, 99%, 27%);
   --global-theme-key-eq-col: white;
-  --global-theme-head-col: white;
+  --global-theme-head-col: hsl(60, 10%, 19%);
 
-  --global-theme-key-bg-active: rgb(206, 206, 206);
-  --global-theme-key-shadow-active: hsl(28, 16%, 65%);
-  --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
-  --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
-  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
-  --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
+  --global-theme-key-bg-active: hsl(0, 0%, 78%);
+  --global-theme-key-shadow-active: hsl(35, 11%, 61%);
+  --global-theme-key-accent-bg-active: hsl(185, 42%, 31%);
+  --global-theme-key-accent-shadow-active: hsl(185, 58%, 25%);
+  --global-theme-key-eq-bg-active: hsl(25, 100%, 31%);
+  --global-theme-key-eq-shadow-active: hsl(25, 99%, 27%);
+}
+
+html[data-mytheme="purple"] {
+  --global-theme-main-bg: hsl(268, 75%, 9%);
+  --global-theme-screen-bg: hsl(268, 71%, 12%);
+  --global-theme-keypad-bg: hsl(268, 71%, 12%);
+  --global-theme-key-bg: hsl(268, 47%, 21%);
+  --global-theme-key-shadow: hsl(290, 70%, 36%);
+  --global-theme-key-col: hsl(52, 100%, 62%);
+  --global-theme-key-accent-bg: hsl(281, 89%, 26%);
+  --global-theme-key-accent-shadow: hsl(285, 91%, 52%);
+  --global-theme-key-accent-col: white;
+  --global-theme-key-eq-bg: hsl(176, 100%, 44%);
+  --global-theme-key-eq-shadow: hsl(177, 92%, 70%);
+  --global-theme-key-eq-col: hsl(198, 20%, 13%);
+  --global-theme-head-col: hsl(52, 100%, 62%);
+
+  --global-theme-key-bg-active: hsl(268, 46%, 18%);
+  --global-theme-key-shadow-active: hsl(290, 70%, 36%);
+  --global-theme-key-accent-bg-active: hsl(281, 89%, 21%);
+  --global-theme-key-accent-shadow-active: hsl(285, 91%, 52%);
+  --global-theme-key-eq-bg-active: hsl(176, 94%, 38%);
+  --global-theme-key-eq-shadow-active: hsl(177, 92%, 70%);
 }
 
 body {
@@ -102,7 +102,7 @@ header {
   max-height: 50%;
   font-size: 1.8em;
   text-align: center;
-  color: white;
+  color: var(--global-theme-head-col);
   margin-left: 5px;
 }
 
@@ -135,7 +135,7 @@ header {
   height: 14px;
   -webkit-appearance: none;
   outline: none;
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--global-theme-keypad-bg);
   border-radius: 30px;
   padding: 0 3px;
 }
@@ -145,8 +145,8 @@ header {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: hsl(6, 63%, 50%);
-  filter: drop-shadow(0 0 1px hsl(6, 70%, 34%));
+  background: var(--global-theme-key-eq-bg);
+  filter: drop-shadow(0 0 1px var(--global-theme-key-eq-shadow));
   cursor: pointer;
 }
 
@@ -160,13 +160,13 @@ label {
   height: 6px;
   width: 40px;
   display: inline-block;
-  color: white;
+  color: var(--global-theme-head-col);
 }
 
 .title {
   font-size: 8px;
   display: inline-block;
-  color: white;
+  color: var(--global-theme-head-col);
   min-width: 10px;
   text-align: center;
   padding: 0 2px;
@@ -174,7 +174,7 @@ label {
 
 .result {
   width: 100%;
-  background-color: hsl(224, 36%, 15%);
+  background-color: var(--global-theme-screen-bg);
   border-radius: 8px;
   height: 90px;
   display: flex;
@@ -189,13 +189,13 @@ label {
   width: 90%;
   height: 35%;
   font-size: 32px;
-  color: white;
+  color: var(--global-theme-head-col);
   text-align: end;
 }
 
 .buttons {
   width: 100%;
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--global-theme-keypad-bg);
   border-radius: 8px;
   height: 310px;
   margin: 10px 0;
@@ -212,10 +212,6 @@ label {
   width: 90%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header header"
-    "main main main sidebar"
-    "footer footer . footer";
   place-items: center;
   gap: 15px;
 }
@@ -234,26 +230,26 @@ label {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: hsl(221, 14%, 31%);
+  color: var(--global-theme-key-col);
   font-family: "Spartan", sans-serif;
-  background-color: hsl(30, 25%, 89%);
+  background-color: var(--global-theme-key-bg);
   border: none;
   border-radius: 8px;
-  box-shadow: 0 6px hsl(28, 16%, 65%);
+  box-shadow: 0 3px var(--global-theme-key-shadow);
 }
 
 .key.delete-key {
-  color: white;
-  background-color: hsl(225, 21%, 49%);
-  box-shadow: 0 6px hsl(224, 28%, 35%);
+  color: var(--global-theme-key-accent-col);
+  background-color: var(--global-theme-key-accent-bg);
+  box-shadow: 0 3px var(--global-theme-key-accent-shadow);
 
   font-size: 15px;
 }
 
 .key.rst-key {
-  color: white;
-  background-color: hsl(225, 21%, 49%);
-  box-shadow: 0 6px hsl(224, 28%, 35%);
+  color: var(--global-theme-key-accent-col);
+  background-color: var(--global-theme-key-accent-bg);
+  box-shadow: 0 3px var(--global-theme-key-accent-shadow);
 
   font-size: 15px;
 
@@ -261,9 +257,9 @@ label {
 }
 
 .key.eq-key {
-  color: white;
-  background-color: hsl(6, 63%, 50%);
-  box-shadow: 0 6px hsl(6, 70%, 34%);
+  color: var(--global-theme-key-eq-col);
+  background-color: var(--global-theme-key-eq-bg);
+  box-shadow: 0 3px var(--global-theme-key-eq-shadow);
 
   font-size: 15px;
 
@@ -271,23 +267,23 @@ label {
 }
 
 .key:active {
-  background-color: rgb(206, 206, 206);
-  box-shadow: 0 3px hsl(28, 16%, 65%);
+  background-color: var(--global-theme-key-bg-active);
+  box-shadow: 0 0px var(--global-theme-key-shadow-active);
   transform: translateY(3px);
 }
 .key.eq-key:active {
-  background-color: hsl(6, 62%, 44%);
-  box-shadow: 0 3px hsl(6, 70%, 34%);
+  background-color: var(--global-theme-key-eq-bg-active);
+  box-shadow: 0 0px var(--global-theme-key-eq-shadow-active);
   transform: translateY(3px);
 }
 .key.rst-key:active {
-  background-color: hsl(224, 22%, 38%);
-  box-shadow: 0 3px hsl(224, 28%, 35%);
+  background-color: var(--global-theme-key-accent-bg-active);
+  box-shadow: 0 0px var(--global-theme-key-accent-shadow-active);
   transform: translateY(3px);
 }
 .key.delete-key:active {
-  background-color: hsl(224, 22%, 38%);
-  box-shadow: 0 3px hsl(224, 28%, 35%);
+  background-color: var(--global-theme-key-accent-bg-active);
+  box-shadow: 0 0px var(--global-theme-key-accent-shadow-active);
   transform: translateY(3px);
 }
 .attribution {
