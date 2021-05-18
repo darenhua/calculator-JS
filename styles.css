@@ -1,0 +1,303 @@
+html {
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
+}
+
+html[data-mytheme="light"] {
+  --global-theme-main-bg: hsl(222, 26%, 31%);
+  --global-theme-screen-bg: hsl(224, 36%, 15%);
+  --global-theme-keypad-bg: hsl(223, 31%, 20%);
+  --global-theme-key-bg: hsl(30, 25%, 89%);
+  --global-theme-key-shadow: hsl(28, 16%, 65%);
+  --global-theme-key-col: hsl(221, 14%, 31%);
+  --global-theme-key-accent-bg: hsl(225, 21%, 49%);
+  --global-theme-key-accent-shadow: hsl(224, 28%, 35%);
+  --global-theme-key-accent-col: white;
+  --global-theme-key-eq-bg: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow: hsl(6, 70%, 34%);
+  --global-theme-key-eq-col: white;
+  --global-theme-head-col: white;
+
+  --global-theme-key-bg-active: rgb(206, 206, 206);
+  --global-theme-key-shadow-active: hsl(28, 16%, 65%);
+  --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
+  --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
+  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
+}
+
+html[data-mytheme="dark"] {
+  --global-theme-main-bg: hsl(222, 26%, 31%);
+  --global-theme-screen-bg: hsl(224, 36%, 15%);
+  --global-theme-keypad-bg: hsl(223, 31%, 20%);
+  --global-theme-key-bg: hsl(30, 25%, 89%);
+  --global-theme-key-shadow: hsl(28, 16%, 65%);
+  --global-theme-key-col: hsl(221, 14%, 31%);
+  --global-theme-key-accent-bg: hsl(225, 21%, 49%);
+  --global-theme-key-accent-shadow: hsl(224, 28%, 35%);
+  --global-theme-key-accent-col: white;
+  --global-theme-key-eq-bg: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow: hsl(6, 70%, 34%);
+  --global-theme-key-eq-col: white;
+  --global-theme-head-col: white;
+
+  --global-theme-key-bg-active: rgb(206, 206, 206);
+  --global-theme-key-shadow-active: hsl(28, 16%, 65%);
+  --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
+  --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
+  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
+}
+
+html[data-mytheme="purple"] {
+  --global-theme-main-bg: hsl(222, 26%, 31%);
+  --global-theme-screen-bg: hsl(224, 36%, 15%);
+  --global-theme-keypad-bg: hsl(223, 31%, 20%);
+  --global-theme-key-bg: hsl(30, 25%, 89%);
+  --global-theme-key-shadow: hsl(28, 16%, 65%);
+  --global-theme-key-col: hsl(221, 14%, 31%);
+  --global-theme-key-accent-bg: hsl(225, 21%, 49%);
+  --global-theme-key-accent-shadow: hsl(224, 28%, 35%);
+  --global-theme-key-accent-col: white;
+  --global-theme-key-eq-bg: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow: hsl(6, 70%, 34%);
+  --global-theme-key-eq-col: white;
+  --global-theme-head-col: white;
+
+  --global-theme-key-bg-active: rgb(206, 206, 206);
+  --global-theme-key-shadow-active: hsl(28, 16%, 65%);
+  --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
+  --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
+  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
+  --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--global-theme-main-bg);
+}
+
+.calculator {
+  width: 37%;
+  height: 80%;
+  margin-bottom: 15px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 15%;
+  max-height: 50%;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+  margin-left: 5px;
+}
+
+.themes {
+  height: 80%;
+  min-width: 20%;
+}
+
+.col2 {
+  height: 100%;
+  width: 100%;
+}
+
+.row1 {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.row2 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#slider {
+  width: 38px;
+  height: 14px;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 30px;
+  padding: 0 3px;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+  filter: drop-shadow(0 0 1px hsl(6, 70%, 34%));
+  cursor: pointer;
+}
+
+.themes-slider {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-size: 8px;
+  height: 6px;
+  width: 40px;
+  display: inline-block;
+  color: white;
+}
+
+.title {
+  font-size: 8px;
+  display: inline-block;
+  color: white;
+  min-width: 10px;
+  text-align: center;
+  padding: 0 2px;
+}
+
+.result {
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 8px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.result-value {
+  display: inline-block;
+  max-width: 90%;
+  width: 90%;
+  height: 35%;
+  font-size: 32px;
+  color: white;
+  text-align: end;
+}
+
+.buttons {
+  width: 100%;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 8px;
+  height: 310px;
+  margin: 10px 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.buttons-panel {
+  display: grid;
+  height: 90%;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer . footer";
+  place-items: center;
+  gap: 15px;
+}
+
+.key {
+  /** min-width: 60px;
+  min-height: 20px; 
+    width: 50%;
+  height: 35%;
+**/
+  display: inline-block;
+  font-size: 22px;
+  min-width: 100%;
+  min-height: 90%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: hsl(221, 14%, 31%);
+  font-family: "Spartan", sans-serif;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px hsl(28, 16%, 65%);
+}
+
+.key.delete-key {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 6px hsl(224, 28%, 35%);
+
+  font-size: 15px;
+}
+
+.key.rst-key {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 6px hsl(224, 28%, 35%);
+
+  font-size: 15px;
+
+  grid-area: 5 / 1 / 5 / span 2;
+}
+
+.key.eq-key {
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 6px hsl(6, 70%, 34%);
+
+  font-size: 15px;
+
+  grid-area: 5 / 3 / 5 / span 2;
+}
+
+.key:active {
+  background-color: rgb(206, 206, 206);
+  box-shadow: 0 3px hsl(28, 16%, 65%);
+  transform: translateY(3px);
+}
+.key.eq-key:active {
+  background-color: hsl(6, 62%, 44%);
+  box-shadow: 0 3px hsl(6, 70%, 34%);
+  transform: translateY(3px);
+}
+.key.rst-key:active {
+  background-color: hsl(224, 22%, 38%);
+  box-shadow: 0 3px hsl(224, 28%, 35%);
+  transform: translateY(3px);
+}
+.key.delete-key:active {
+  background-color: hsl(224, 22%, 38%);
+  box-shadow: 0 3px hsl(224, 28%, 35%);
+  transform: translateY(3px);
+}
+.attribution {
+  padding-top: 50px;
+  font-size: 10px;
+  color: white;
+  opacity: 0.5;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
