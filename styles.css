@@ -22,8 +22,9 @@ html[data-mytheme="dark"] {
   --global-theme-key-shadow-active: hsl(28, 16%, 65%);
   --global-theme-key-accent-bg-active: hsl(224, 22%, 38%);
   --global-theme-key-accent-shadow-active: hsl(224, 28%, 35%);
-  --global-theme-key-eq-bg-active: hsl(6, 63%, 50%);
+  --global-theme-key-eq-bg-active: hsl(6, 63%, 42%);
   --global-theme-key-eq-shadow-active: hsl(6, 70%, 34%);
+  --global-theme-attribution-col: white;
 }
 
 html[data-mytheme="light"] {
@@ -47,6 +48,7 @@ html[data-mytheme="light"] {
   --global-theme-key-accent-shadow-active: hsl(185, 58%, 25%);
   --global-theme-key-eq-bg-active: hsl(25, 100%, 31%);
   --global-theme-key-eq-shadow-active: hsl(25, 99%, 27%);
+  --global-theme-attribution-col: black;
 }
 
 html[data-mytheme="purple"] {
@@ -70,6 +72,7 @@ html[data-mytheme="purple"] {
   --global-theme-key-accent-shadow-active: hsl(285, 91%, 52%);
   --global-theme-key-eq-bg-active: hsl(176, 94%, 38%);
   --global-theme-key-eq-shadow-active: hsl(177, 92%, 70%);
+  --global-theme-attribution-col: white;
 }
 
 body {
@@ -81,6 +84,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--global-theme-main-bg);
+  transition: all 1.5s;
 }
 
 .calculator {
@@ -138,6 +142,7 @@ header {
   background-color: var(--global-theme-keypad-bg);
   border-radius: 30px;
   padding: 0 3px;
+  transition: all 1.5s;
 }
 
 #slider::-webkit-slider-thumb {
@@ -181,6 +186,7 @@ label {
   align-items: center;
   justify-content: center;
   margin: 10px 0;
+  transition: all 1.5s;
 }
 
 .result-value {
@@ -204,6 +210,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 10px 0;
+  transition: all 1.5s;
 }
 
 .buttons-panel {
@@ -289,11 +296,11 @@ label {
 .attribution {
   padding-top: 50px;
   font-size: 10px;
-  color: white;
+  color: var(--global-theme-attribution-col);
   opacity: 0.5;
 }
 
 .attribution a {
-  color: white;
+  color: var(--global-theme-attribution-col);
   text-decoration: none;
 }
